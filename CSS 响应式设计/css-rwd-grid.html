@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<mate name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximun-scale=1.0,user-scalable=no;" />
+	<title>rwd-grid</title>
+	<style type="text/css">
+	*{
+		box-sizing: border-box;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.row:after{
+		content: "";
+		clear:both;
+		display: block;
+	}
+
+	[class*='col-']{
+		float: left;
+		padding: 5px;
+	}
+
+	.col-3{
+		width: 25%
+	}
+
+	.col-9{
+		width: 75%
+	}
+
+	html{
+		font-family: "Lucida Sans",sans-serif;
+	}
+
+	.header{
+		background-color: #9933cc;
+		color:#fff;
+		padding: 15px;
+	}
+
+	.menu ul{
+		list-style-type: none;
+	}
+
+	.menu li{
+		padding: 8px;
+		margin-bottom: 7px;
+		background-color: #33b5e5;
+		color: #fff;
+		box-shadow: 0 1px 3px rgba(0,0,0,0,12) , 0 1px 2px rgba(0,0,0,0.24);
+		cursor: pointer;
+	}
+
+	.menu li:hover{
+		background-color: #09c
+	}
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Chania</h1>
+	</div>
+
+	<div class="row">
+		<div class="col-3 menu">
+			<ul>
+				<li>The Flight</li>
+				<li>The Flight1</li>
+				<li>The Flight2</li>
+				<li>The Flight3</li>
+			</ul>
+		</div>
+		<div class="col-9">
+			<h1>The city</h1>
+			<p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city</p>
+		</div>
+	</div>
+</body>
+</html>
