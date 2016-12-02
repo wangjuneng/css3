@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color:#fff;
+}
+body{
+	 font-family: "Microsoft YaHei",tahoma,arial,"Hiragino SansGB","b8bf53",sans-serif; 
+}
+
+.menutitle{
+	background: #B1191A;
+	color: #fff;
+	height: 41px;
+	line-height: 41px;
+	font-weight: bold;
+	font-size: 11pt;
+	text-indent: 1em;
+}
+
+.menulist{
+	width:210px;
+	background: #c81623;
+	margin: 20px 20px;
+	border-bottom: 1px solid #C81623;
+	position: relative;
+}
+
+ul li{
+	list-style: none;
+}
+
+.menulist li{
+	font-size: 9pt;
+	height: 31px;
+	line-height: 31px;
+	text-indent: 1em;
+	z-index: 9;
+}
+
+.menulist li i{
+	color:#fff;
+	display: block;
+	float: right;
+	margin-right: 10px
+}
+
+.menulist li:hover{
+	color: #B1191A;
+	background: #fff;
+	width: 209px;
+	border-left: 1px solid #C81623;
+}
+
+.menulist li:hover a{color: #C81623;}
+
+.menulist li:hover span{ 
+	width: 20px;
+	height: 31px;
+	display: inline-block; 
+	background: #fff; 
+	position: relative;
+	top: 0;
+	float: right;
+	right: -35px;
+	z-index: 99;
+}  
+.hoverdiv{
+	position: absolute;
+	width: 999px;
+	padding: 20px;
+	top: 40px;
+	left: 208px;
+	border : 1px solid #C81623; 
+ 
+}
+
+.hoverleft{
+	width: 790px;
+	float: left;
+}
+.lefttop a{
+	line-height: 24px;
+	display: inline-block;
+	color: #ffffff;
+	padding: 0 0 0 4px;
+	margin-right: 10px;
+	background: #7C7171; 
+}
+
+.lefttop a b{
+	display:inline-block;
+	height: 24px;
+	width: 23px;
+	background: #5c5251;  
+    margin-left: 4px;  
+    padding-right: 5px;
+}
+
+.lefttop a:hover{
+	background:  #C81623;  
+}
+
+.lefttop a:hover b{  
+    background: #B1191A;  
+} 
+
+.leftbottom dl{
+	display: block;
+	overflow: hidden;
+}
+.leftbottom dl dt{
+	display: inline-block;
+	float: left;
+	width: 80px;
+	text-align: right;
+	font-weight: 700;
+	font-size: 11pt;
+	text-indent: 0 !important;
+	margin-right: 10px;
+}
+
+.leftbottom dl dd{
+	width: 667px;
+	display: block;
+	text-indent: 0 !important;
+	border-bottom: 1px solid #E0E0E0;
+	-webkit-margin-start:90px;
+}
+
+.leftbottom dl dd a{
+	line-height: 16px;
+	height: 16px;
+	display: inline-block;
+	border-left: 1px solid #E0E0E0;
+	padding: 0px 8px;
+}
+
+.hoverright{  
+    float: right;  
+    width: 190px;  
+    text-indent: 0;  
+    display: inline;  
+}  
+
+.hoverright img{border: none;}  
+
+.leftbottom a{
+	color: #666!important;
+}
+
+.hoverdiv{
+	display: none;
+}
+.menulist li:hover .hoverdiv{display: block;}
